@@ -7,7 +7,7 @@ class Home extends Component {
   render() {
     return (
       <>
-        <NavBar showScore={true} />
+        <NavBar showScore={false} />
         <MDBContainer>
           <MDBJumbotron>
             <h1>Hello World!</h1>
