@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { MDBContainer, MDBJumbotron } from 'mdbreact'
+import { Link } from 'react-router-dom'
+import { MDBContainer, MDBJumbotron, MDBBtn } from 'mdbreact'
 import NavBar from '../../components/NavBar'
 
 class Home extends Component {
@@ -11,6 +12,7 @@ class Home extends Component {
         <MDBContainer>
           <MDBJumbotron>
             <h1>Hello World!</h1>
+            <Link className="btn btn-secondary" path="/game"></Link>
           </MDBJumbotron>
         </MDBContainer>
       </>

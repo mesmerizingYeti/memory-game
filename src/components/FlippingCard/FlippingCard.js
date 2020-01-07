@@ -3,7 +3,7 @@ import ReactCardFlip from 'react-card-flip'
 import FlippingCardFront from '../FlippingCardFront'
 import FlippingCardBack from '../FlippingCardBack'
 
-const Card = props => {
+const FlippingCard = props => {
   return (
     <ReactCardFlip
       isFlipped={props.flipped}
@@ -16,4 +16,4 @@ const Card = props => {
   )
 }
 
-export default Card
+export default FlippingCard

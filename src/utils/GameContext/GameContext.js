@@ -2,9 +2,12 @@ import { createContext } from 'react'
 
 const GameContext = createContext({
   cards: [],
-  maxScore: 0,
   score: 0,
-  handleCardClick: () => {}
+  maxScore: 0,
+  handleCardClick: () => {},
+  incrementScore: () => {},
+  updateMaxScore: () => {},
+  resetGame: () => {}
 })
 
 export default GameContext
