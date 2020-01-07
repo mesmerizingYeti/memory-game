@@ -1,15 +1,19 @@
 import React, { Component } from 'react'
 import { MDBContainer, MDBJumbotron } from 'mdbreact'
+import NavBar from '../../components/NavBar'
 
 class Home extends Component {
 
   render() {
-    return(
-      <MDBContainer>
-        <MDBJumbotron>
-          <h1>Hello World!</h1>
-        </MDBJumbotron>
-      </MDBContainer>
+    return (
+      <>
+        <NavBar showScore={true} />
+        <MDBContainer>
+          <MDBJumbotron>
+            <h1>Hello World!</h1>
+          </MDBJumbotron>
+        </MDBContainer>
+      </>
     )
   }
 

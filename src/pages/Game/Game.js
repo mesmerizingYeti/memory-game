@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { MDBNavbar, MDBContainer, MDBBtn, MDBCard, MDBCardBody, MDBRow, MDBCol } from 'mdbreact'
+import { MDBContainer, MDBBtn, MDBCard, MDBCardBody, MDBRow, MDBCol } from 'mdbreact'
 import ReactCardFlip from 'react-card-flip'
 
 class Game extends Component {
