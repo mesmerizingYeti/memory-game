@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { MDBContainer, MDBRow } from 'mdbreact'
 import FlippingCard from '../../components/FlippingCard'
+import NavBar from '../../components/NavBar'
 import GameContext from '../../utils/GameContext'
 
 const cards = [
@@ -21,10 +22,13 @@ const cards = [
 class Game extends Component {
 
   state = {
+    currentCard: { value: -1, flipped: true },
     cards,
     score: 0,
     maxScore: 0,
     handleCardClick: event => {
+      
+
       let [...tempArr] = this.state.cards
       tempArr[event.target.value].flipped = !tempArr[event.target.value].flipped
       this.setState({ cards: tempArr })
@@ -45,6 +49,7 @@ class Game extends Component {
   render() {
     return (
       <GameContext.Provider value={this.state}>
+        <NavBar showScore={true} />
         <MDBContainer>
           <MDBRow>
             {
